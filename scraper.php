@@ -19,7 +19,7 @@ foreach($html->find('table#forum_110 tbody[id]') as $tbody)
           $num = $th->parent()->find('td.nums em',0)->plaintext;    
            $reply = $th->parent()->find('td.nums strong',0)->plaintext; 
 //exit();
-     scraperwiki::save_sqlite(array('url'),array('title'=>base64_encode($title),'url'=> base64_encode($link),'link'=>$link,'num'=>$num,'reply'=>$reply,'type'=>'nguoithe'));
+     scraperwiki::save_sqlite(array('url'),array('title'=>base64_encode($title),'url'=> base64_encode($link),'link'=>$link,'num'=>$num,'reply'=>$reply,'type'=>'hopnha'));
     }
 
    
