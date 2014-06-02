@@ -1,8 +1,8 @@
 <?php
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
-for($i=1;$i<56;$i++){
-$html_content = scraperwiki::scrape("http://vietphrase.com/go/sexinsex.net/bbs/forumdisplay.php?fid=110&filter=type&typeid=294&page=$i");
+for($i=1;$i<12;$i++){
+$html_content = scraperwiki::scrape("http://vietphrase.com/go/sexinsex.net/bbs/forumdisplay.php?fid=110&filter=type&typeid=292&page=$i");
 
 $html = str_get_html($html_content);
 $data = array();
